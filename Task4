@@ -1,0 +1,30 @@
+package Lesson3;
+
+import java.util.Scanner;
+
+//Вывести на экран прямоугольник
+public class Task4 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите высоту прямоугольника: ");
+        int height = scanner.nextInt();
+        System.out.println("Введите ширину прямоугольника: ");
+        int width = scanner.nextInt();
+
+        for (int i = 1; i <= height; i++) {
+
+            for (int j = 1; j <= width; j++) {
+                if (i == 1 || i == height) {
+                    System.out.print("*");
+                } else if (j == 1 || j == width) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+
+        }
+
+    }
+}
