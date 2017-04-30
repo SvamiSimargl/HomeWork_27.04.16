@@ -1,0 +1,30 @@
+package Lesson3;
+
+import java.util.Scanner;
+
+//Высчитываем с помощью цикла факториал числа
+public class Task2 {
+
+
+    public static void main(String[] args) {
+
+        System.out.println("Введите число в диапазоне от 5 до 15 для вычисления его факториала :");
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+
+        while (true) {
+            if (a < 5 || a > 15) {
+                System.out.println("Введите число в заданом диапазоне!");
+                a = sc.nextInt();
+            } else {
+                break;
+            }
+        }
+        int fact = 1;
+        for (int i = a; i > 0; i--) {
+            fact *= i;
+        }
+        System.out.println(fact);
+    }
+}
