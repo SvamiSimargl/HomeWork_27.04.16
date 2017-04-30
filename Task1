@@ -1,0 +1,27 @@
+package Lesson3;
+
+import java.util.Scanner;
+
+//С помощью циклов нарисовать обои
+public class Task1 {
+    public static void main(String[] args) {
+        System.out.println("Введите число для количества полос в обоях :");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+
+
+        for (int i = 0; i < a; i++) {
+            for (int j = 0; j < a; j++) {
+                if (j % 2 != 0) {
+                    System.out.print("***");
+                } else {
+                    System.out.print("+++");
+
+                }
+
+            }
+            System.out.println();
+        }
+
+    }
+}
